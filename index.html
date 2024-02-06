@@ -5,7 +5,6 @@
     <title>My First HTML Page for a Site</title>
     <style>
 
-
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -42,46 +41,33 @@
             padding: 10px;
         }
 
-        footer {
+        main {
+            padding: 20px;
+            margin-left: 20%;
+            border: 2px solid #808080;
             background-color: #FFFFFF;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 10px;
-            border-top: 2px solid #808080;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            border-bottom: 0 none;
+            border-left: 1px solid #CCCCCC;
+            border-right: 1px solid #CCCCCC;
+            margin: 0 auto !important;
+            min-height: 100%;
+            width: 1500px !important;
+            overflow: auto;
         }
 
 
-
-        h1 {
-            text-align: center;
-            margin-top: 90px;
-        }
-        footer ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
+        
 
 
-        footer li {
-            margin-bottom: 100px;
-        }
-
-
-        footer a {
-            color: #808080;
-            text-decoration: none;
-        }
 
 
         h1, p {
             text-align: center;
             margin-bottom: 15px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px; /* Adjust the margin-top value to lower the h1 element */
         }
 
 
@@ -92,17 +78,48 @@
             margin: 0 auto;
         }
 
-
-        ol, ul {
-            margin-bottom: 50px;
+        ol {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding-left: 20px; /* Add left padding for space between list items */
         }
 
+        ol li {
+            margin-bottom: 20px; /* Adjust the margin for space between list items */
 
-        ol li, ul li {
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 5px;
         }
+
+        footer {
+            background-color: #FFFFFF;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #808080;
+            width: 100%;
+            display: flex;
+            flex-direction: row; /* Change to horizontal layout */
+            justify-content: space-around; /* Distribute items horizontally */
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row; /* Change to horizontal layout */
+        }
+
+        footer li {
+            margin-right: 15px;
+            font-size: 25px;/* Adjust the margin for space between list items */
+        }
+
+        footer a {
+            color: #808080;
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
