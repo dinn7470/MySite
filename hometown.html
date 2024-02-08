@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Staten Island, USA</title>
     <style>
         /* Reset Styles */
-        body, h1, p, ul, ol, footer {
+        body, h1, p, ul, footer {
             margin: 0;
             padding: 0;
         }
@@ -32,7 +33,7 @@
             float: right;
             padding: 10px;
             border-top: 2px solid #808080;
-            border-bottom: 2px solid #808080;
+            border-bottom: 2px solid #808080; /* Moved the border here */
             border-left: 2px solid #808080;
             border-right: 2px solid #808080;
             display: flex;
@@ -45,43 +46,33 @@
             color: #333;
         }
 
-
         /* Main Content Styles */
         main {
             display: flex;
             border-bottom: 2px solid #808080;
         }
 
-        /* Sidebar Styles */
-        aside {
-            flex: 1;
-            padding: 10px;
-            border-right: 2px solid #808080;
+        /* Section Styles */
+        section {
+            margin-bottom: 10px;
         }
 
-        /* Content Area Styles */
-        .content {
-            flex: 3;
-            padding: 20px;
-        }
-
-        h1 {
+        /* Heading Styles */
+        h1, h2, h3 {
             font-family: Arial, sans-serif;
-            font-size: 24px;
-            text-align: center;
-            font-weight: bold;
             color: #333;
+            margin-bottom: 10px;
         }
 
-        p {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: #666;
+        /* List Styles */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 20px;
         }
 
-        ol {
-            margin-top: 10px;
+        li {
+            margin-bottom: 5px;
         }
 
         /* Footer Styles */
@@ -91,45 +82,39 @@
             border-top: 2px solid #808080;
             text-align: center;
         }
-
-        footer p {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            color: #333;
-        }
     </style>
 </head>
+
 <body>
 <header>
     <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
     <nav>
-        <a href="./index.html">Home Page</a>
-        <a href="./hometown.html">Visit My Hometown Page</a>
-        <a href="./Gallery.html">See My Photo Gallery</a>
-        <a href="./Poem.html">Poem By Emily Dickinson</a>
+        <span><a href="./index.html">Home Page</a></span>
+        <span><a href="./hometown.html">Visit My Hometown Page</a></span>
+        <span><a href="./Gallery.html">See My Photo Gallery</a></span>
+        <span><a href="./Poem.html">Poem By Emily Dickinson</a></span>
     </nav>
 </header>
-
 <main>
-    <aside>
-        <ul>
-            <li><a href="https://twitter.com/">Twitter</a></li>
-            <li><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        </ul>
-    </aside>
-
-    <div class="content">
+    <section>
         <h1>Staten Island, USA</h1>
-        <p>New York City</p>
-        <p>Richmond County</p>
-        <p>Between New Jersey and Brooklyn</p>
+        <p>
+        <section>New York City</section>
+        <section>Richmond County</section>
+        <section>Between New Jersey and Brooklyn</section>
+        </p>
         <h2>Location</h2>
-        <p>Staten Island is located just across the river from New Jersey.</p>
+        <p>
+            Staten Island is located just across the river from New Jersey.
+        </p>
         <h2>About</h2>
-        <p>Staten Island is one of the five boroughs of New York City. It is the least populated and most suburban. It is the only borough of New York City besides Manhattan that is an Island. It is the only NYC borough that isn't connected to the Subway.</p>
+        <p>
+        <section>Staten Island is one of the five boroughs of New York City. It is the least populated and most suburban.</section>
+        <section> It is the only borough of New York City besides Manhattan that is an Island. </section>
+        <section>It is the only NYC borough that isn't connected to the Subway.</section>
+        </p>
         <h2>Weather</h2>
-        <p>The weather is pretty moderate and not very different from most of NorthEastern America.</p>
+        <p>The weather is pretty moderate and not very different from most of NorthEastern America</p>
         <h2>Population</h2>
         <p>About 500,000 people are residents of Staten Island.</p>
         <h2>Sports</h2>
@@ -140,12 +125,12 @@
             <li>Hike in the trail parks</li>
             <li>Go to the movies</li>
         </ul>
-    </div>
+    </section>
 </main>
-
 <footer>
-    <p>&copy; 2024 MySiteIST256. All rights reserved.</p>
+    <p>Copyright © 2024 YourName. All rights reserved.</p>
+    <p>Contact: example@email.com</p>
 </footer>
-
 </body>
+
 </html>

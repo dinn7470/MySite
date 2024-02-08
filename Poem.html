@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
     <meta charset="UTF-8">
     <title>Title</title>
 <Style>
+    /* Reset Styles */
+    body,
+    h1,
+    p,
+    ul,
+    ol,
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Centered Div Styles */
+    div {
+        width: 70%;
+        margin: 0 auto; /* Center the div horizontally */
+        text-align: center; /* Center the content inside the div */
+    }
+
+    /* Paragraph Styles */
+    p {
+        font-size: 18px; /* Adjust the font size as needed */
+        line-height: 1.5; /* Adjust the line height as needed */
+        margin-bottom: 10px; /* Adjust the margin bottom as needed */
+    }
+
+    /* Citation Styles */
+    cite {
+        font-style: italic;
+        color: #666; /* Adjust the color as needed */
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-top: 2px solid #808080;
+        text-align: center;
+    }
+
+    footer p {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Header Styles */
     header {
         background-color: #FFFFFF;
         color: #000000;
@@ -39,14 +85,16 @@
     }
 </Style>
 <body>
-<img src="UniversityLogo.png" alt="Logo of The University of Arizona">
-
-<a href="./index.html">Home Page</a>
-    <a href="./hometown.html">Visit My Hometown Page</a>
-    <a href="./Gallery.html">See My Photo Gallery</a>
-    <a href="./Poem.html">Poem By Emily Dickinson</a>
-
-
+<header>
+    <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
+    <nav>
+        <a href="./index.html">Home Page</a>
+        <a href="./hometown.html">Visit My Hometown Page</a>
+        <a href="./Gallery.html">See My Photo Gallery</a>
+        <a href="./Poem.html">Poem By Emily Dickinson</a>
+    </nav>
+</header>
+<div>
 <p>I'm Nobody! Who are you?<br>
     Are you - Nobody - Too?<br>
     Then there's a pair of us!<br>
@@ -56,6 +104,14 @@
     To tell one's name - the livelong June -<br>
     To an admiring Bog!</p>
 <p><cite>By Emily Dickinson (1891) </cite></p>
+
+</div>
+
+<footer>
+    <p>Copyright © 2024 YourName. All rights reserved.
+
+        Contact: example@email.com.</p>
+</footer>
 
 
 
