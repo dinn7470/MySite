@@ -5,169 +5,204 @@
     <title>My First HTML Page for a Site</title>
     <style>
 
-        body {
-            font-family: 'Arial', sans-serif;
+        /* Reset Styles */
+        body, h1, p, ul, ol, footer {
             margin: 0;
             padding: 0;
-            background-color: #FFFFFF;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
         }
 
+        /* Header Styles */
         header {
             background-color: #FFFFFF;
-            color: #FFFFFF;
-            padding: 5px;
-            text-align: left;
-            width: 400px;
-            margin: 2px;
-            border: 2px solid #808080;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-        nav {
-            float: right;
-            content: "";
-            display: block;
-            border: 2px solid #808080;
-            position: fixed;
-            top: 0;
-            right: 0;
+            color: #000000;
             padding: 10px;
+            border-bottom: 2px solid #808080;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        main {
-            padding: 20px;
-            margin-left: 20%;
-            border: 2px solid #808080;
+        /* Logo Styles */
+        header img {
+            max-width: 100000px; /* Adjust max-width as needed */
+        }
+
+        /* Navigation Styles */
+        nav {
             background-color: #FFFFFF;
-            border-bottom: 0 none;
-            border-left: 1px solid #CCCCCC;
-            border-right: 1px solid #CCCCCC;
-            margin: 0 auto !important;
-            min-height: 100%;
-            width: 1500px !important;
-            overflow: auto;
+            float: right;
+            padding: 10px;
+            border-top: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-right: 2px solid #808080;
+            display: flex;
+            justify-content: flex-end;
         }
 
-
-        
-
-
-
-
-        h1, p {
-            text-align: center;
-            margin-bottom: 15px;
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
         }
+
+        /* Main Content Styles */
+        main {
+            display: flex;
+            padding: 20px;
+            border-bottom: 10px solid #808080;
+        }
+
+        /* Sidebar Styles */
+        aside {
+            flex: 1;
+            padding: 10px 0 10px 10px; /* Adjust the padding as needed */
+            border-right: 10px solid #808080;
+        }
+
+        /* Content Area Styles */
+        .content {
+            flex: 3;
+            padding-left: 20px;
+        }
+
         h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
             text-align: center;
-            margin-top: 50px; /* Adjust the margin-top value to lower the h1 element */
+            font-weight: bold;
+            color: #333;
+        }
+        div{
+            align: center;
         }
 
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
         }
 
         ol {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            padding-left: 20px; /* Add left padding for space between list items */
+            margin-top: 10px;
         }
 
-        ol li {
-            margin-bottom: 20px; /* Adjust the margin for space between list items */
-
-        }
-
+        /* Footer Styles */
         footer {
             background-color: #FFFFFF;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 10px;
+            padding: 20px;
             border-top: 2px solid #808080;
-            width: 100%;
-            display: flex;
-            flex-direction: row; /* Change to horizontal layout */
-            justify-content: space-around; /* Distribute items horizontally */
+            text-align: center;
         }
 
         footer ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: row; /* Change to horizontal layout */
+            list-style-type: none;
         }
 
-        footer li {
-            margin-right: 15px;
-            font-size: 25px;/* Adjust the margin for space between list items */
+        footer ul li {
+            display: inline-block;
+            margin-right: 10px;
+            bottom: 0;
+            position: fixed;
         }
 
-        footer a {
-            color: #808080;
+        footer ul li a {
             text-decoration: none;
+            color: #333;
+            bottom: 0;
+            position: fixed;
         }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .content ol {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .content ol li {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+
+
+
+
 
     </style>
+
 </head>
 <body>
 <header>
     <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
+    <nav>
+        <a href="./index.html">Home Page</a>
+        <a href="./hometown.html">Visit My Hometown Page</a>
+        <a href="./Gallery.html">See My Photo Gallery</a>
+        <a href="./Poem.html">Poem By Emily Dickinson</a>
+    </nav>
 </header>
 
-
-<nav>
-    <span><a href="./index.html">Home Page |</a></span>
-    <span><a href="./hometown.html">Visit My Hometown Page |</a></span>
-    <span><a href="./Gallery.html">See My Photo Gallery |</a></span>
-    <span><a href="./Poem.html">Poem By Emily Dickinson |</a></span>
-</nav>
-
-
-
-
-
-
-
-
 <main>
-    <h1>5 Things to Know About Rattlesnakes and Their Babies</h1>
-    <p>UA College of Pharmacy | Aug. 6, 2014</p>
+    <aside>
+        <ul>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        </ul>
+    </aside>
 
+    <div class="content">
+        <h1>5 Things to Know About Rattlesnakes and Their Babies</h1>
+        <p>UA College of Pharmacy | Aug. 6, 2014</p>
 
-    <img src="SnakeBite.jpg" alt="Snake bite on the side of a child's foot">
+        <img src="SnakeBite.jpg" alt="Snake bite on the side of a child's foot">
 
-
-
-
-    <ol>
-        <li>Baby rattlesnakes range in length from 6 to 12 inches and are easily camouflaged by brush and grass.</li>
-        <li>Baby rattlesnakes are rattleless until they first shed their skins, so there will be no infamous "chica-chica" sound before they strike.</li>
-        <li>Despite their impish size, baby snakes have enough venom to be very dangerous if they bite a human.</li>
-        <li>Adult rattlesnakes do not always rattle an audible warning before or while they are biting.</li>
-        <li>It's a good idea to call the poison center if you notice an unidentified small cut or wound, even if you feel no pain. With the lack of telltale rattle warning, people can be bitten without knowing what has happened until they notice their symptoms and attribute them to a snakebite.</li>
-    </ol>
+        <ol>
+            <li>Baby rattlesnakes range in length from 6 to 12 inches and are easily camouflaged by brush and grass.</li>
+            <li>Baby rattlesnakes are rattleless until they first shed their skins, so there will be no infamous "chica-chica" sound before they strike.</li>
+            <li>Despite their impish size, baby snakes have enough venom to be very dangerous if they bite a human.</li>
+            <li>Adult rattlesnakes do not always rattle an audible warning before or while they are biting.</li>
+            <li>It's a good idea to call the poison center if you notice an unidentified small cut or wound, even if you feel no pain. With the lack of telltale rattle warning, people can be bitten without knowing what has happened until they notice their symptoms and attribute them to a snakebite.</li>
+        </ol>
+    </div>
 </main>
 
-
 <footer>
-    <ul>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
+    <p>&copy; 2024 MySiteIST256. All rights reserved.</p>
 </footer>
+
 </body>
 </html>

@@ -3,47 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>Red Rocks, Colorado</title>
+    <style>
+        /* Reset Styles */
+        body, h1, p, ul, ol, footer {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 10px;
+            border-bottom: 2px solid #808080;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo Styles */
+        header img {
+            max-width: 100000px; /* Adjust max-width as needed */
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #FFFFFF;
+            float: right;
+            padding: 10px;
+            border-top: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-right: 2px solid #808080;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+
+        /* Main Content Styles */
+        main {
+            display: flex;
+            border-bottom: 2px solid #808080;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table caption {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        table th, table td {
+            border: 1px solid #808080;
+            padding: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-top: 2px solid #808080;
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
-<img src="UniversityLogo.png" alt="Logo of The University of Arizona">
-<a href="./index.html">Home Page</a>
-<a href="./hometown.html">Visit My Hometown Page</a>
-<a href="./Gallery.html">See My Photo Gallery</a>
-<a href="./Poem.html">Poem By Emily Dickinson</a>
-<table>
-    <caption>Red Rocks, Colorado</caption>
-    <thead>
-    <tr>
-        <th>Photo</th>
-        <th>Date</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><img src="vacation1.jpg" alt="Vacation 1" /></td>
-        <td>Jan 16, 2018</td>
-        <td>View from the top row; sitting
-        area holds 9,525 people</td>
-    </tr>
-    <tr>
-        <td><img src="vacation2.jpg" alt="Vacation 2" /></td>
-        <td>Feb 20, 2017</td>
-        <td>Facing south from the top of the Ampitheatre</td>
-    </tr>
-    <tr>
-        <td><img src="vacation3.jpg" alt="Vacation 3" /></td>
-        <td>March 30, 2019</td>
-        <td>Nearby red rocks sit 6,450 feet (1,970 m)
-        above sea level</td>
-    </tr>
-    <tr>
-        <td colspan="3">Copyright © 2019 Zippy Photographers </td>
-    </tr>
-    </tbody>
-</table>
+<header>
+    <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
+    <nav>
+        <a href="./index.html">Home Page</a>
+        <a href="./hometown.html">Visit My Hometown Page</a>
+        <a href="./Gallery.html">See My Photo Gallery</a>
+        <a href="./Poem.html">Poem By Emily Dickinson</a>
+    </nav>
+</header>
 
+<main>
+    <table>
+        <caption>Red Rocks, Colorado</caption>
+        <thead>
+        <tr>
+            <th>Photo</th>
+            <th>Date</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src="vacation1.jpg" alt="Vacation 1" /></td>
+            <td>Jan 16, 2018</td>
+            <td>View from the top row; sitting area holds 9,525 people</td>
+        </tr>
+        <tr>
+            <td><img src="vacation2.jpg" alt="Vacation 2" /></td>
+            <td>Feb 20, 2017</td>
+            <td>Facing south from the top of the Amphitheatre</td>
+        </tr>
+        <tr>
+            <td><img src="vacation3.jpg" alt="Vacation 3" /></td>
+            <td>March 30, 2019</td>
+            <td>Nearby red rocks sit 6,450 feet (1,970 m) above sea level</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
 
+<footer>
+    <p>&copy; 2019 Zippy Photographers. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
